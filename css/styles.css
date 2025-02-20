@@ -18,7 +18,7 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --body-color: #FEC31F!important;
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -93,10 +93,14 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
+nav.navbar {
+  background-color: #FEC31F !important;
+}
 
 h1, h2, h3, h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+  font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -111,6 +115,24 @@ img {
   max-width: 100%;
   height: auto;
 }
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+.nav-link:hover {
+  color: #ff5733 !important; /* Cambia a tu color preferido */
+}
+
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
@@ -151,7 +173,7 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background-color: var(--body-color) ;
 }
 
 /*==================== NAV ====================*/
