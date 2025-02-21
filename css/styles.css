@@ -93,7 +93,7 @@ body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background-color: #FEC31F !important;
   color: var(--text-color);
 }
 nav.navbar {
@@ -299,8 +299,14 @@ img {
 }
 .about__info{
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2-5)
+justify-content: space-around;
+gap: 2 rem;
+
+}
+.about__info div {
+  text-align: center;
+  margin-right: 40px;
+  margin-top: 20px;
 }
 .about__info-title{
   font-size: var(--h2-font-size);
@@ -319,6 +325,9 @@ img {
 .about__buttons{
   display: flex;
   justify-content: center;
+}
+.about__info div {
+  text-align: center;
 }
 /*==================== SKILLS ====================*/
 
