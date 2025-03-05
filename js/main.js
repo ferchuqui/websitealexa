@@ -19,11 +19,8 @@ const skillsHeader = document.querySelectorAll('.skills__header');
 function toggleSkills() {
     let itemClass = this.parentNode.classList;
 
-    skillsContent.forEach((content) => content.classList.remove('skills__open'));
-    
-    if (!itemClass.contains('skills__open')) {
-        itemClass.add('skills__open');
-    }
+    // Toggle the 'skills__open' class on the clicked item
+    itemClass.toggle('skills__open');
 }
 
 skillsHeader.forEach((el) => {
